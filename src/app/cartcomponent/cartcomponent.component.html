@@ -1,1 +1,78 @@
-<p>cartcomponent works!</p>
+<div class="container">
+
+
+  <mat-card class="mat-card">
+   
+
+    <div class="content-header">
+
+      <div class="subtitle-left"> <mat-icon color="white" class="modicon">shopping_cart</mat-icon> Order Summary </div>
+      <div class="subtitle-right"> Remove all </div>
+    </div>
+    <!-- 
+        <div class=""> 
+        </div>
+ -->
+
+ 
+
+    <div class="example-container">
+     
+      <div *ngFor="let item of dataFromJson">
+        <div class="container-row">
+      <div class="images">
+        
+      </div>
+      <div class="column-title">     
+        <div class="title">
+        {{item.item_name}}
+        </div>
+      </div>
+      <div class="column-description">
+        <div class="descripcion-products">
+          {{item.short_description}}
+        </div>
+      </div>
+
+      <div class="container-bottom-substract">
+        <div class="bottom-operation">
+          <button mat-mini-fab>
+            <mat-icon class="icon-operation">remove</mat-icon>
+          </button>
+        </div>
+      </div>    
+
+      <div class="quantity-number">
+        {{item.quantity}}
+      </div>
+
+      
+      <div class="container-bottom-add">
+        <div class="bottom-operation">
+          <button mat-mini-fab>
+            <mat-icon class="icon-operation">add</mat-icon>
+          </button>
+        </div>
+      </div>    
+
+
+      <div class="price">
+        {{item.price_without_tax *  item.quantity}}
+      </div>
+
+      <div class="trash-icon">
+        <mat-icon class="icondelete">delete</mat-icon> 
+      </div>
+
+    </div>
+
+    </div>
+
+    </div>
+  
+
+   
+
+  </mat-card>
+
+</div>
