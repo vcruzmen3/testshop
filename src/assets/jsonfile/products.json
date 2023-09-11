@@ -5,8 +5,8 @@
    "short_description": "Sub information",
    "quantity": 1,
    "price_without_tax": 19.32,
-   "tax": 30,
-   "shipping_fee": 1.5,
+   "tax": 0,
+   "shipping_fee": 0,
    "img_path": "https://arome.mx/cdn/shop/files/perfume-212-nyc-para-mujer-de-carolina-herrera-eau-de-toilette-100ml-arome-mexico-1_650x.jpg?v=1688599492"
  },
  {
@@ -15,9 +15,8 @@
     "short_description":  "Sub information",
     "quantity": 1,
     "price_without_tax": 10.18,
-    "tax": 30,
-    "shipping_fee": 0.5,
-
+    "tax": 0,
+    "shipping_fee": 0,
    "img_path": "https://arome.mx/cdn/shop/files/perfume-212-nyc-para-mujer-de-carolina-herrera-eau-de-toilette-100ml-arome-mexico-1_650x.jpg?v=1688599492"
   },
   {
@@ -26,8 +25,8 @@
     "short_description": "Sub information",
     "quantity": 1,
     "price_without_tax": 59.11,
-    "tax": 10,
-    "shipping_fee": 0.7,
+    "tax": 0,
+    "shipping_fee": 0,
    "img_path": "https://arome.mx/cdn/shop/files/perfume-212-nyc-para-mujer-de-carolina-herrera-eau-de-toilette-100ml-arome-mexico-1_650x.jpg?v=1688599492"
   },
   {
@@ -36,8 +35,8 @@
     "short_description": "Sub information",
     "quantity": 1,
     "price_without_tax": 45.60,
-    "tax": 30,
-    "shipping_fee": 1.5,
+    "tax": 5.51,
+    "shipping_fee": 3.23,
    "img_path": "https://arome.mx/cdn/shop/files/perfume-212-nyc-para-mujer-de-carolina-herrera-eau-de-toilette-100ml-arome-mexico-1_650x.jpg?v=1688599492"
   }
 ]

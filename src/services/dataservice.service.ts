@@ -4,20 +4,15 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DataserviceService {
-data: any= [];
-loadData: boolean = false;
+  data: any = [];
+  loadData: boolean = false;
 
+  constructor(private http: HttpClient) {}
 
-  constructor(private http : HttpClient) { 
-
+  getData(): Observable<IProduct[]> {
+    return this.http.get<IProduct[]>('../../assets/jsonfile/products.json');
   }
-
-    getData(): Observable<IProduct[]> {
-      return this.http.get<IProduct[]>("../../assets/jsonfile/products.json");
-    }
-
-  }
-
+}
