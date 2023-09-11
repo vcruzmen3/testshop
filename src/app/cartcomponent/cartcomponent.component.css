@@ -14,6 +14,7 @@
 }
 
 .mat-card {
+  max-height: auto;
   max-width: 370px;
   background-color: #f5f6f7;
 }
@@ -56,13 +57,12 @@
 }
 
 .example-container {
-  height: 400px;
+  height: auto;
   width: 370px;
   max-width: 100%;
   overflow: auto;
   margin-left: 10px;
 }
-
 
 .container-row {
   margin: 20px auto;
