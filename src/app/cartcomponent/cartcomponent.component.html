@@ -2,13 +2,17 @@
   <mat-card class="mat-card">
     <div class="content-header">
       <div class="subtitle-left"> <mat-icon color="white" class="modicon">shopping_cart</mat-icon> Order Summary </div>
-      <div class="subtitle-right"> Remove all </div>
+      <div class="subtitle-right" (click)="removeAll()"> 
+        Remove all </div>
     </div>
 
     <div class="example-container">
       <div *ngFor="let item of dataFromJson; let i = index">
         <div class="container-row">
           <div class="images">
+            <img  src="{{item.img_path}}" alt="{{item.item_name}}"
+              [alt]="item.item_name" tooltip="item.item_name">
+
           </div>
           <div class="column-title">
             <div class="title">
@@ -64,8 +68,8 @@
       <div class="subtotal-right"> {{ accounttaxes | currency:'USD':'symbol' }} </div>
     </div>
     <div class="content-account">
-      <div class="subtotal-left"> Total (including tax) </div>
-      <div class="subtotal-right"> {{ accounttotal | currency:'USD':'symbol' }} </div>
+      <div class="subtotal-left total"> Total (including tax) </div>
+      <div class="subtotal-right total"> {{ accounttotal | currency:'USD':'symbol' }} </div>
     </div>
   </mat-card>
 

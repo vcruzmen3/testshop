@@ -21,18 +21,13 @@ export class CartcomponentComponent {
   loadDataJson() {
     this.service.getData().subscribe((data) => {
       this.dataFromJson = data;
-
-      console.log(' -- - -- -');
-      console.log(this.dataFromJson);
       this.dataShow = this.dataFromJson;
-      console.log('datos en datashow');
       this.doAccount();
     });
   }
-  
+
   addproduct(item: number) {
     ++this.dataShow[item].quantity;
-    console.log('item es: ', this.dataShow[item].quantity);
     this.doAccount();
   }
 
@@ -43,8 +38,6 @@ export class CartcomponentComponent {
     } else {
       this.dataShow.splice(item, 1);
     }
-
-    console.log('item es: ', this.dataShow[item].quantity);
   }
 
   deletitem(item: number) {
@@ -67,4 +60,13 @@ export class CartcomponentComponent {
         this.accountSubtotal + this.accountshippnfees + this.accounttaxes;
     });
   }
+
+
+  removeAll(){
+    this.dataFromJson = [];
+    this.dataShow =this.dataFromJson;
+    this.doAccount();
+  }
+
+
 }

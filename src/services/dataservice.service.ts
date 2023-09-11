@@ -15,4 +15,6 @@ export class DataserviceService {
   getData(): Observable<IProduct[]> {
     return this.http.get<IProduct[]>('../../assets/jsonfile/products.json');
   }
+
+
 }
